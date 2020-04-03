@@ -1,0 +1,121 @@
+body, html, .application {
+  font-family: 'Source Han Sans SC', -apple-system, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif !important;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+p { margin-bottom: 0; }
+small{font-size: 12px !important; }
+ul, ol { list-style:none!important; }
+a { text-decoration:none!important; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+.disable {
+	background-color: #f5f5f5 !important;
+}
+/**
+清除浮动
+ */
+.outer:after {
+  clear:both;
+  content:'.';
+  display:block;
+  width: 0;
+  height: 0;
+  zoom:1;
+  visibility:hidden;
+}
+.v-menu{
+  .v-menu__activator{
+    .v-input{
+      min-width: 110px;
+      .v-input__control{
+        .v-input__slot{
+          margin-bottom: 0;
+          &:before{
+            content: '';
+            width: 0;
+          }
+        }
+        .v-text-field__details{
+          display: none;
+        }
+      }
+    }
+  }
+}
+.v-snack {
+  &__content {
+    height: 48px !important;
+    padding: 10px !important;
+    justify-content: center !important;
+    .v-btn {
+      margin: 0 !important;
+    }
+  }
+}
+.home-cont1 {
+  .v-tabs__container {
+    background: #fffdf3 !important;
+  }
+}
+.topContainer_cet .rule table {
+  margin: auto;
+}
+
+.v-input__control {
+	display: inline;
+	min-height: 10px !important;
+}
+
+/* select框加上下拉标志 */
+.select {
+	position: relative;
+}
+.select:after {
+	border: 1px solid black;
+	border-right: 0;
+	border-top: 0;
+	content: " ";
+	display: block;
+	height: 0.5em;
+	pointer-events: none;
+	position: absolute;
+	transform: rotate(-45deg);
+	transform-origin: center;
+	width: 0.5em;
+	margin-top: -0.375em;
+	right: 1.425em;
+	top: 50%;
+	z-index: 4;
+}
+
+.v-navigation-drawer {
+	position: fixed !important;
+	float: left;
+	background-color: rgb(66, 66, 66) !important;
+}
+
+.v-list__group__header__append-icon .material-icons {
+	font-size: 26px;
+	color: white !important;
+}
+
+/* 所有组件公共样式 */
+.init {
+	padding: 10px 10px 10px 250px !important;
+	border-radius: 4px !important;
+	width: 100% !important;
+	float: left !important;
+}
+
+.v-list__group__header--active {
+	background-color: red !important;
+}
